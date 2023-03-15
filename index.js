@@ -53,7 +53,6 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
         if(err){
@@ -62,7 +61,6 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: Create a function to initialize app
 async function init() {
     const response = await inquirer.prompt(questions);
     const formatted_response = generateMarkdown(response); 
